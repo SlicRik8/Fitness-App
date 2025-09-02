@@ -60,4 +60,8 @@ public class UserService {
 
 
     }
+
+    public Boolean existsByUserId(String userId) {
+        return repository.existsById(userId);
+    }
 }
